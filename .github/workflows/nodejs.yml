@@ -44,6 +44,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.SSH_PASSPHRASE }}
         script: |
+          echo "woohoo"
           cd /
           cd PipelineTest
           git pull origin main
